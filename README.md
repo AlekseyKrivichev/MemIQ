@@ -1,7 +1,7 @@
 # MemIQ
 Telegram bot MemIQ — отправка мемов, фактов и цитат
 
-<img src="logo.png" alt="Memiq Logo" width="250" height="250"/>
+<img src="logo.png" alt="Memiq Logo" width="350" height="350"/>
 
 **Memiq** — лёгкий и весёлый Telegram-бот, который по нажатию кнопки отправляет:  
 
