@@ -1,87 +1,81 @@
 # MemIQ
-Telegram bot MemIQ — отправка мемов, фактов и цитат
 
-<img src="logo.png" alt="Memiq Logo" width="400" height="400"/>
+Telegram bot MemIQ — отправка мемов, цитат и фактов | Telegram bot MemIQ — sending memes, quotes, and facts
 
-**MemIQ** — лёгкий и весёлый Telegram-бот, который по нажатию кнопки отправляет:  
-
-- **Случайный мем** из вашей коллекции  
-- **Цитату** из файла `quotes.txt`  
-- **Факт** из файла `facts.txt`  
-
-Отлично подходит для развлечения, мотивации или просто чтобы поднять настроение!  
+<img src="logo.png" alt="Memiq Logo" width="300" height="300"/>
 
 ---
 
-## Автор
+## Описание / Description
 
-**Автор проекта:** **@Noir_Codex**  
-*GitHub:* [@Noir_Codex](https://github.com/Noir-Codex)  
-*Telegram:* [@Noir_Codex](https://t.me/Noir_Codex)  
-
-> Хочешь свой бот? Пиши — помогу настроить!  
-
----
-
-## Функционал
-
-| Кнопка     | Что делает |
-|-----------|------------|
-| **Мем**   | Отправляет случайное изображение из папки `memes/` |
-| **Цитата**| Отправляет случайную цитату из `quotes.txt` |
-| **Факт**  | Отправляет случайный факт из `facts.txt` |
-
-> После каждого действия — кнопки остаются, можно жать снова!
+| Русский | English |
+|---------|---------|
+| **MemIQ** — лёгкий и весёлый Telegram-бот. По нажатию кнопки он отправляет: | **MemIQ** is a lightweight, fun Telegram bot. On button click it sends: |
+| - Случайный мем из папки `memes/` | - A random meme from `memes/` folder |
+| - Цитату из файла `quotes.txt` | - A quote from `quotes.txt` |
+| - Факт из файла `facts.txt` | - A fact from `facts.txt` |
 
 ---
 
-## Установка и запуск
+## Автор / Author
 
-### 1. Клонируйте репозиторий
-```bash
-git clone https://github.com/Noir_Codex/Memiq.git
-cd Memiq
-git clone https://github.com/Noir_Codex/Memiq.git
-cd Memiq
-```
-### 2. Создайте виртуальное окружение
-```bash
-python -m venv venv
-source venv/bin/activate        # Linux / macOS
-venv\Scripts\activate           # Windows
-```
-### 3. Установите зависимости
-```bash
-pip install aiogram
-```
-### 4. Настройте конфигурацию
-```bash
-1.Создайте бота через @BotFather и получите токен
-2.Откройте config.py и вставьте токен:
-token = "ВАШ_ТОКЕН_ЗДЕСЬ"
-3.Укажите абсолютные пути к файлам и папкам:
-photo = FSInputFile("/путь/к/Memiq/logo.png")
-images_folder = "/путь/к/Memiq/memes"
-```
-### 5. Подготовьте контент
-```bash
-quotes.txt — по одной цитате на строку
-facts.txt — по одному факту на строку
-Папка memes/ — кидайте любые изображения (.png, .jpg, .jpeg, .gif, .webp)
-```
-### 6. Запустите бота
-```bash
-python memiq.py
-```
-### Готово! Бот онлайн и ждёт команду /start
+| Русский | English |
+|---------|---------|
+| **Автор проекта:** @Noir_Codex | **Project author:** @Noir_Codex |
+| GitHub: [@Noir_Codex](https://github.com/Noir-Codex) | GitHub: [@Noir_Codex](https://github.com/Noir-Codex) |
+| Telegram: [@Noir_Codex](https://t.me/Noir_Codex) | Telegram: [@Noir_Codex](https://t.me/Noir_Codex) |
 
-### Особенности
-### Защита от дублирования команды /start (не чаще 1 раза в секунду)
-### Автоматическая загрузка списка мемов при старте
-### Поддержка всех популярных форматов изображений
-### Чистый, документированный код
-### Легко кастомизировать под свои нужды
+> Хочешь свой бот? Пиши! | Want your own bot? Contact me!
 
+---
 
-> Создано с любовью к Telegram и хорошему настроению
-### С уважением | @Noir_Codex
+## Функционал / Features
+
+| Кнопка / Button | Действие / Action |
+|-----------------|-----------------|
+| Мем / Meme      | Отправляет случайное изображение из `memes/` / Sends a random image from `memes/` |
+| Цитата / Quote  | Отправляет случайную цитату из `quotes.txt` / Sends a random quote from `quotes.txt` |
+| Факт / Fact     | Отправляет случайный факт из `facts.txt` / Sends a random fact from `facts.txt` |
+
+> После действия кнопки остаются, можно нажимать снова! / Buttons remain after action, you can press again!
+
+---
+
+## Установка и запуск / Installation & Run
+
+| Шаг / Step | Русский | English |
+|------------|---------|---------|
+| 1 | Клонируем репозиторий | Clone the repository |
+|   | `git clone https://github.com/Noir-Codex/Memiq.git` | `git clone https://github.com/Noir-Codex/Memiq.git` |
+|   | `cd Memiq` | `cd Memiq` |
+| 2 | Создаём виртуальное окружение | Create a virtual environment |
+|   | `python -m venv venv` | `python -m venv venv` |
+|   | `source venv/bin/activate # Linux / macOS` | `source venv/bin/activate # Linux / macOS` |
+|   | `venv\Scripts\activate # Windows` | `venv\Scripts\activate # Windows` |
+| 3 | Устанавливаем зависимости | Install dependencies |
+|   | `pip install -r requirements.txt` | `pip install -r requirements.txt` |
+| 4 | Настройка конфигурации | Configure |
+|   | В `config.py` вставьте токен и пути к файлам | In `config.py`, set your token and file paths |
+| 5 | Подготовка контента | Prepare content |
+|   | `quotes.txt` — по одной цитате на строку | `quotes.txt` — one quote per line |
+|   | `facts.txt` — по одному факту на строку | `facts.txt` — one fact per line |
+|   | Папка `memes/` — любые изображения | `memes/` folder — any images |
+| 6 | Запуск бота | Run bot |
+|   | `python memiq.py` | `python memiq.py` |
+
+---
+
+## Особенности / Features
+
+| Русский | English |
+|---------|---------|
+| Защита от дублирования команды `/start` (не чаще 1 раза в секунду) | Prevent duplicate `/start` command |
+| Авто-загрузка мемов при старте | Auto-load memes at startup |
+| Поддержка всех популярных форматов изображений | Supports all popular image formats |
+| Чистый, документированный код | Clean, well-documented code |
+| Легкая кастомизация | Easy customization |
+
+---
+
+> Создано с любовью к Telegram / Made with love for Telegram  
+> С уважением, @Noir_Codex / Best regards, @Noir_Codex
