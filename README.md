@@ -16,7 +16,7 @@ Telegram bot MemIQ — отправка мемов, фактов и цитат
 ## Автор
 
 **Автор проекта:** **@Noir_Codex**  
-*GitHub:* [@Noir_Codex](https://github.com/Noir_Codex)  
+*GitHub:* [@Noir_Codex](https://github.com/Noir-Codex)  
 *Telegram:* [@Noir_Codex](https://t.me/Noir_Codex)  
 
 > Хочешь свой бот? Пиши — помогу настроить!  
