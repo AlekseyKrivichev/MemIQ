@@ -43,17 +43,17 @@ git clone https://github.com/Noir_Codex/Memiq.git
 cd Memiq
 git clone https://github.com/Noir_Codex/Memiq.git
 cd Memiq
-
+```
 ### 2. Создайте виртуальное окружение
 ```bash
 python -m venv venv
 source venv/bin/activate        # Linux / macOS
 venv\Scripts\activate           # Windows
-
+```
 ### 3. Установите зависимости
 ```bash
 pip install aiogram
-
+```
 ### 4. Настройте конфигурацию
 ```bash
 1.Создайте бота через @BotFather и получите токен
@@ -62,17 +62,17 @@ token = "ВАШ_ТОКЕН_ЗДЕСЬ"
 3.Укажите абсолютные пути к файлам и папкам:
 photo = FSInputFile("/путь/к/Memiq/logo.png")
 images_folder = "/путь/к/Memiq/memes"
-
+```
 ### 5. Подготовьте контент
 ```bash
 quotes.txt — по одной цитате на строку
 facts.txt — по одному факту на строку
 Папка memes/ — кидайте любые изображения (.png, .jpg, .jpeg, .gif, .webp)
-
+```
 ### 6. Запустите бота
 ```bash
 python memiq.py
-
+```
 ### Готово! Бот онлайн и ждёт команду /start
 
 ### Особенности
